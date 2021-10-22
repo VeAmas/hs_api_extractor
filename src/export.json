@@ -1,0 +1,58 @@
+
+    option = {
+      title: {
+        text: 'Basic Graph'
+      },
+      tooltip: {
+        formatter (data) {
+          
+          return `<div>
+          ${data.name}
+          <br/>
+          ${data.data.path}
+          </div>`
+        }
+      },
+      animationDurationUpdate: 1500,
+      animationEasingUpdate: 'quinticInOut',
+      series: [
+        {
+  "type": "graph",
+  "symbolSize": 50,
+  "labelLayout": {
+    "hideOverlap": true
+  },
+  "roam": true,
+  "layout": "force",
+  "label": {
+    "show": true
+  },
+  "edgeSymbol": [
+    "circle",
+    "arrow"
+  ],
+  "edgeSymbolSize": [
+    4,
+    10
+  ],
+  "edgeLabel": {
+    "fontSize": 20
+  },
+  "data": [
+    {
+      "name": "test.js",
+      "id": 0,
+      "category": ".js",
+      "path": "D:/SVN/RPAS/risk-rpas-basic-ui/src/hsfundFuncanal/test.js",
+      "symbolSize": 0.302
+    }
+  ],
+  "links": [],
+  "force": {
+    "repulsion": 1,
+    "edgeLength": 200
+  }
+}
+      ]
+    };    
+    
